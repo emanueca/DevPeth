@@ -84,14 +84,30 @@ Encontrou um bug ou tem uma ideia para uma nova funcionalidade? Nós adoraríamo
 
 O DevPath também é open source. Contribuir para nossa plataforma é uma ótima forma de praticar!
 
-1.  Antes de adicionar uma issue, por favor, [procure por issues existentes](https://github.com/SEU_USUARIO/DevPath/issues) para evitar duplicatas.
-2.  Se não existir, [abra uma nova issue](https://github.com/SEU_USUARIO/DevPath/issues/new/choose) usando nossos templates.
+1.  Antes de adicionar uma issue, por favor, [procure por issues existentes](https://github.com/emanueca/DevPath/issues) para evitar duplicatas.
+2.  Se não existir, [abra uma nova issue](https://github.com/emanueca/DevPath/issues/new/choose) usando nossos templates.
 3.  Se você deseja contribuir com código:
     * Faça um `Fork` deste repositório.
     * Crie uma nova branch: `git checkout -b feature/sua-feature`
     * Faça o `commit` de suas mudanças: `git commit -m 'Adiciona feature X'`
     * Envie para a branch: `git push origin feature/sua-feature`
     * Abra um `Pull Request`.
+
+# Developer - DevPeth
+Este diretório contém toda a documentação, guias de configuração e padrões de código necessários para entender, rodar e contribuir com o projeto DevPeth.
+(toda contribuilção de issues terá seu nome destacado)
+
+## 🗺️ Mapa do Diretório
+Use a tabela abaixo para navegação rápida entre os guias essenciais do projeto.
+
+| Pasta | Conteúdo Principal | 🔗 Acesso Rápido |
+| :--- | :--- | :--- |
+| **`/TypeDeveloper`** | Padrões de TypeScript, convenções de tipos e regras de manutenção. | **[Guia de TypeScript](./TypeDeveloper/README.md)** |
+| **`/ServerDeveloper`** | Instruções para configurar e rodar o ambiente de desenvolvimento local. | **[Guia de Setup Local](./ServerDeveloper/README.md)** |
+| **`/databaseDeveloper`** | Documentação do schema, diagramas e guias do banco de dados (MySQL). | **[Guia do Banco de Dados](./databaseDeveloper/README.md)** |
+
+---
+
 
 ## ⚖️ Licença
 
