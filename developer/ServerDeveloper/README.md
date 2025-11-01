@@ -70,11 +70,11 @@ Saída esperada:
 ```
 VITE vX.X.X  ready in XXX ms
 
-➜  Local:   http://localhost:3000/
+➜  Local:   http://localhost:x/
 ➜  Network: use --host to expose
 ```
 
-Acesse `http://localhost:3000/` no navegador para ver a aplicação.
+Acesse `http://localhost:x/` no navegador para ver a aplicação.
 
 ---
 
@@ -94,14 +94,17 @@ Para rodar na raiz (ex.: `http://meu-ip/`), garanta que seu `vite.config.ts` est
 
 ```ts
 // vite.config.ts
-import { defineConfig } from 'vite';
-
+import { defineConfig, loadEnv } from 'vite';
+// ...
 export default defineConfig(({ mode }) => {
-  return {
-    // Garante que o build de produção use a base correta
-    base: mode === 'production' ? '/' : '/',
-    // ... resto da configuração
-  };
+    // ...
+    return {
+      // MODIFIQUE AQUI:
+      // Mude de '/DevPeth/' ou qualquer outra coisa para '/'
+      base: '/', 
+      
+      // ... resto do arquivo
+    };
 });
 ```
 
