@@ -102,9 +102,9 @@ Use a tabela abaixo para navegação rápida entre os guias essenciais do projet
 
 | Pasta | Conteúdo Principal | 🔗 Acesso Rápido |
 | :--- | :--- | :--- |
-| **`/TypeDeveloper`** | Padrões de TypeScript, convenções de tipos e regras de manutenção. | **[Guia de TypeScript](./TypeDeveloper/README.md)** |
-| **`/ServerDeveloper`** | Instruções para configurar e rodar o ambiente de desenvolvimento local. | **[Guia de Setup Local](./ServerDeveloper/README.md)** |
-| **`/databaseDeveloper`** | Documentação do schema, diagramas e guias do banco de dados (MySQL). | **[Guia do Banco de Dados](./databaseDeveloper/README.md)** |
+| **`/TypeDeveloper`** | Padrões de TypeScript, convenções de tipos e regras de manutenção. | **[Guia de TypeScript](./developer/TypeDeveloper/REDME.md)** |
+| **`/ServerDeveloper`** | Instruções para configurar e rodar o ambiente de desenvolvimento local. | **[Guia de Setup Local](./developer/ServerDeveloper/README.md)** |
+| **`/databaseDeveloper`** | Documentação do schema, diagramas e guias do banco de dados (MySQL). | **[Guia do Banco de Dados](./developer/DatabaseDeveloper/README.md)** |
 
 ---
 
