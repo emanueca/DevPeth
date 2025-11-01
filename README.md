@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="/archive/photo/gitfile/Logo_DevPeth.png" width="400px" alt="DevPath Logo">
+    <img src="/archive/photo/gitfile/Logo_DevPeth_resized.png" width="400px" alt="DevPath Logo">
 </p>
 
 <p align="center">
