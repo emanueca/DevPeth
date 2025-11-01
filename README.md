@@ -61,10 +61,10 @@ Resolver uma *Ghost Issue* não é apenas uma contribuição; é uma demonstraç
 
 O DevPath é construído com foco em escalabilidade e uma experiência de usuário moderna.
 
-* **Frontend:** [Next.js / React]
+* **Frontend:** [Next.js / CSS styaland]
 * **Backend:** [Node.js (Fastify) / Go]
-* **Banco de Dados:** [PostgreSQL]
-* **Crawler / Jobs:** [BullMQ / Redis]
+* **Banco de Dados:** [MySQL]
+* **Crawler / Jobs:** [...]
 
 ## 💖 Contribuidores
 
