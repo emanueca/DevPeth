@@ -1,0 +1,49 @@
+# .github/workflows/deploy.yml
+name: Deploy to GitHub Pages
+
+# Faz o workflow rodar toda vez que você der 'push' na branch 'main'
+on:
+  push:
+    branches: [ "main" ] # Mude para 'master' se for o nome da sua branch
+
+# Permissões que o GitHub Actions precisa para publicar no Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (Baixar o código)
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js (Configurar o Node)
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20 # Versão do Node.js
+
+      - name: Install dependencies (Instalar pacotes)
+        run: npm ci
+
+      - name: Build (Buildar o projeto)
+        # injeta o segredo do GitHub em uma variável de ambiente
+        # que o 'npm run build' pode usar.
+        run: npm run build
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+      - name: Upload artifact (Enviar a pasta 'dist')
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist' # A pasta que o 'npm run build' cria
+
+  deploy:
+    # O deploy só roda depois que o 'build' terminar com sucesso
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
